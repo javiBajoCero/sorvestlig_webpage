@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sørvestlig Embedded Firmware</title>
-    <!-- Importing the Inter font from Google Fonts -->
     <link href="https://fonts.googleapis.com" rel="stylesheet">
     <style>
         /* Setup the dark background and centering */
@@ -14,28 +13,34 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #36454f; /* Your background color */
+            background-color: #36454f;
             font-family: 'Inter', sans-serif;
             text-align: center;
             padding: 20px;
+            color: white; /* All text white */
         }
 
         .container {
             max-width: 600px;
         }
 
-        /* Your copper text color */
+        /* Default paragraph + link styling (white now) */
         p, a {
-            color: #b87333; 
+            color: white;
             font-size: 1.5rem;
             line-height: 1.6;
             text-decoration: none;
         }
 
+        /* Copper color only for ø */
+        .copper {
+            color: #b87333;
+        }
+
         /* Style for the link */
         a {
             font-weight: 600;
-            border-bottom: 2px solid #b87333;
+            border-bottom: 2px solid white;
             transition: opacity 0.3s;
         }
 
@@ -47,9 +52,10 @@
 <body>
     <div class="container">
         <p>
-            I'm busy coding embedded firmware. <br>
-            Check what's going on at <br>
-            <a href="https://www.linkedin.com/company/s%C3%B8rvestlig-embedded-firmware-as/" target="_blank">Sørvestlig Embedded Firmware AS</a>
+            Too busy coding embedded firmware to build a webpage. <br>
+            <a href="https://www.linkedin.com/company/s%C3%B8rvestlig-embedded-firmware-as/" target="_blank">
+                S<span class="copper">ø</span>rvestlig Embedded Firmware AS
+            </a>
         </p>
     </div>
 </body>
