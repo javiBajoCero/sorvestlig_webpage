@@ -9,46 +9,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* Setup the dark background and centering */
         body, html {
             height: 100%;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #36454f;
+            background: linear-gradient(135deg, #2d3a45 0%, #36454f 100%);
             font-family: 'Inter', sans-serif;
             text-align: center;
             padding: 20px;
-            color: white; /* All text white */
+            color: white;
         }
 
         .container {
             max-width: 600px;
+            animation: fadeIn 1s ease-in;
         }
 
-        /* Default paragraph + link styling (white now) */
-        p, a {
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        p {
             color: white;
             font-size: 1.5rem;
-            line-height: 1.6;
-            text-decoration: none;
+            line-height: 1.8;
+            margin: 0;
         }
 
-        /* Copper color only for ø */
-        .copper {
-            color: #b87333;
-        }
-
-        /* Style for the link */
         a {
+            color: white;
             font-weight: 600;
-            border-bottom: 2px solid white;
-            transition: opacity 0.3s;
+            text-decoration: none;
+            border-bottom: 2px solid rgba(184, 115, 51, 0.5);
+            transition: all 0.3s ease;
+            display: inline-block;
+            padding-bottom: 2px;
         }
 
         a:hover {
-            opacity: 0.8;
+            border-bottom-color: #b87333;
+            transform: translateY(-2px);
+        }
+
+        .copper {
+            color: #b87333;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        a:hover .copper {
+            transform: scale(1.1);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            p { font-size: 1.2rem; }
         }
     </style>
 </head>
