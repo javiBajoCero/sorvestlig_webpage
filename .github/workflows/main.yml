@@ -65,8 +65,7 @@ jobs:
             --message "$PROMPT" \
             *.md \
             *.txt\
-            *.html\
-            *ico
+            *.html
 
       - name: Commit and Push changes
         run: |
