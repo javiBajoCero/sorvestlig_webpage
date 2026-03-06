@@ -1,0 +1,12 @@
+sørvestlig-embedded-firmware/
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── pages/
+│   ├── index.html
+│   ├── about.html
+│   ├── services.html
+│   └── contact.html
+├── README.md
+└── styles.css

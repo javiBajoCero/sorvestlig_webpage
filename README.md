@@ -1,17 +1,17 @@
 # Sørvestlig Embedded Firmware AS
 
-Welcome to the public GitHub Pages website of Sørvestlig Embedded Firmware AS.
+Welcome to Sørvestlig Embedded Firmware AS, your source for high-quality embedded firmware solutions.
 
-## Project Structure
+## Services
 
-- `index.html`: The main HTML file.
-- `styles.css`: The CSS file containing styles for the website.
-- `scripts.js`: The JavaScript file containing interactive elements.
+- Custom Firmware Development
+- Embedded System Design
+- Software Testing and Validation
 
-## Customization
+## Contact Us
 
-To customize the website, you can modify the `index.html`, `styles.css`, and `scripts.js` files as needed.
+For more information, please visit our LinkedIn page: [LinkedIn](https://www.linkedin.com/company/s%C3%B8rvestlig-embedded-firmware-as)
 
-## Deployment
+## License
 
-To deploy the website, simply push the changes to the `main` branch of your GitHub repository.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
