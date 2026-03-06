@@ -17,14 +17,15 @@ jobs:
         run: |
           npm install -g @anthropic-ai/claude-code
 
-      - name: Run Claude and Generate Site
+      - name: Run Claude (Bypass Mode)
         env:
           ANTHROPIC_BASE_URL: http://localhost:11434
           ANTHROPIC_AUTH_TOKEN: ollama
-          CLAUDE_CODE_MODEL: qwen2.5-coder:7b  # Forzamos al CLI a reconocer este modelo
         run: |
-          # Intentamos la ejecución pasando el modelo directamente
-          claude -p "$(cat requirements.txt)" --model qwen2.5-coder:7b --dangerously-skip-permissions
+          # Usamos un nombre que Claude reconoce, pero Ollama lo interceptará 
+          # y servirá el modelo que cargamos en el paso anterior
+          claude -p "$(cat requirements.txt)" --model claude-3-5-sonnet-20241022 --dangerously-skip-permissions
+
 
 
       - name: Commit and Push changes
