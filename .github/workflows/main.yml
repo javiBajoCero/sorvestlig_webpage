@@ -22,19 +22,6 @@ jobs:
         run: |
           echo "Waiting for Ollama to be ready..."
           sleep 10
-          
-          # Check if Ollama is running
-          curl -s http://localhost:11434/api/tags || exit 1
-          
-          # Verify the model is available
-          echo "Checking if model exists..."
-          curl -s http://localhost:11434/api/tags | grep -q "qwen2.5-coder:7b" || {
-            echo "Model not found, pulling manually..."
-            ollama pull qwen2.5-coder:7b
-          }
-          
-          # List available models
-          echo "Available models:"
           ollama list
 
       - name: Setup Python
@@ -45,19 +32,20 @@ jobs:
       - name: Install aider
         run: pip install aider-chat
 
-      - name: Run AI Code Assistant
+      - name: Run AI Code Assistant (Non-Interactive)
         env:
           OLLAMA_API_BASE: http://localhost:11434
         run: |
-          # Read your requirements/prompt
-          PROMPT=$(cat requirements.txt 2>/dev/null || echo "Review the C++ and C# code for improvements")
+          PROMPT=$(cat requirements.txt 2>/dev/null || echo "Review and document the PibScmc safety controller code")
           
-          # Run aider with Ollama backend
-          aider \
+          # Modo completamente automático
+          echo "$PROMPT" | aider \
             --model ollama/qwen2.5-coder:7b \
-            --no-auto-commits \
             --yes \
-            --message "$PROMPT"
+            --auto-commits \
+            --no-show-model-warnings \
+            --no-pretty \
+            --exit-after-message
 
       - name: Commit and Push changes
         run: |
@@ -69,6 +57,6 @@ jobs:
           if git diff --quiet && git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "feat: code updated by AI assistant (Qwen 2.5 Coder)"
+            git commit -m "feat: AI code review by Qwen 2.5 Coder"
             git push
           fi
