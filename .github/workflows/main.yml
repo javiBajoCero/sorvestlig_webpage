@@ -23,7 +23,8 @@ jobs:
           ANTHROPIC_AUTH_TOKEN: ollama
         run: |
           # Lee los comandos desde el archivo y los pasa a Claude en modo 'headless'
-          COMMANDS=$(cat instrucciones.txt)
+          ls
+          COMMANDS=$(cat .github/workflows/requirements.txt)
           claude "$COMMANDS" --yes
           
       - name: Run Claude and Generate Site
