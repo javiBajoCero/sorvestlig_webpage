@@ -59,6 +59,7 @@ jobs:
           aider \
             --model ollama/qwen2.5-coder:7b \
             --yes-always \
+            --dry-run \
             --no-show-model-warnings \
             --exit \
             --message "$PROMPT" \
