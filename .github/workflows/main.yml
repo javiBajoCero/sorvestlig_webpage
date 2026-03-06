@@ -18,21 +18,39 @@ jobs:
         with:
           model: qwen2.5-coder:7b
 
+      - name: Verify Ollama and Model
+        run: |
+          echo "Waiting for Ollama to be ready..."
+          sleep 10
+          
+          # Check if Ollama is running
+          curl -s http://localhost:11434/api/tags || exit 1
+          
+          # Verify the model is available
+          echo "Checking if model exists..."
+          curl -s http://localhost:11434/api/tags | grep -q "qwen2.5-coder:7b" || {
+            echo "Model not found, pulling manually..."
+            ollama pull qwen2.5-coder:7b
+          }
+          
+          # List available models
+          echo "Available models:"
+          ollama list
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install aider
-        run: |
-          pip install aider-chat
+        run: pip install aider-chat
 
       - name: Run AI Code Assistant
         env:
           OLLAMA_API_BASE: http://localhost:11434
         run: |
           # Read your requirements/prompt
-          PROMPT=$(cat requirements.txt 2>/dev/null || echo "Review and improve the code")
+          PROMPT=$(cat requirements.txt 2>/dev/null || echo "Review the C++ and C# code for improvements")
           
           # Run aider with Ollama backend
           aider \
