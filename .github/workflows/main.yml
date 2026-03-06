@@ -59,24 +59,20 @@ jobs:
           aider \
             --model ollama/qwen2.5-coder:7b \
             --yes-always \
-            --dry-run \
             --no-show-model-warnings \
             --exit \
             --message "$PROMPT" \
             *.md \
-            *.txt\
+            *.txt \
             *.html
 
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          git add .
-          
-          if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "feat: AI code review by Qwen 2.5 Coder"
-            git push
-          fi
+      
+          git add -A
+      
+          git commit -m "feat: AI code review by Qwen 2.5 Coder" || echo "No new commit"
+      
+          git push
