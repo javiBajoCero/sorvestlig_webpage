@@ -13,16 +13,34 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Ollama
-        uses: ai-action/setup-ollama@v2
-        with:
-          model: qwen2.5-coder:7b
-
-      - name: Verify Ollama and Model
+      - name: Install Ollama Manually
         run: |
-          echo "Waiting for Ollama to be ready..."
-          sleep 10
+          curl -fsSL https://ollama.com/install.sh | sh
+          
+          # Start Ollama service in background
+          ollama serve &
+          
+          # Wait for service to be ready
+          echo "Waiting for Ollama to start..."
+          sleep 15
+          
+          # Verify service is running
+          curl -s http://localhost:11434/api/tags || {
+            echo "Ollama failed to start"
+            exit 1
+          }
+
+      - name: Pull Model
+        run: |
+          echo "Pulling qwen2.5-coder:7b model..."
+          ollama pull qwen2.5-coder:7b
+          
+          echo "Verifying model is available..."
           ollama list
+          
+          # Test the model with a simple prompt
+          echo "Testing model..."
+          ollama run qwen2.5-coder:7b "Hello" --verbose
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -32,19 +50,17 @@ jobs:
       - name: Install aider
         run: pip install aider-chat
 
-      - name: Run AI Code Assistant (Non-Interactive)
+      - name: Run AI Code Assistant
         env:
           OLLAMA_API_BASE: http://localhost:11434
         run: |
-          PROMPT=$(cat requirements.txt 2>/dev/null || echo "Review and document the PibScmc safety controller code")
-          
+          PROMPT=$(cat requirements.txt 2>/dev/null || echo "Review the code and suggest improvements")
           # Modo completamente automático - usa --message y --exit
           aider \
             --model ollama/qwen2.5-coder:7b \
             --yes-always \
             --auto-commits \
             --no-show-model-warnings \
-            --no-pretty \
             --exit \
             --message "$PROMPT" \
             *.md \
