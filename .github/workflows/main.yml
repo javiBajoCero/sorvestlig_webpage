@@ -1,32 +1,45 @@
-name: Claude Code Local Action
+name: AI Code Assistant with Ollama
 on: [push, workflow_dispatch]
 
 jobs:
-  build-website:
+  ai-assist:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Ollama
         uses: ai-action/setup-ollama@v2
         with:
-          model: qwen2.5-coder:7b # Modelo optimizado para el límite de 7GB RAM de GitHub
+          model: qwen2.5-coder:7b
 
-      - name: Install Claude Code
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install aider
         run: |
-          npm install -g @anthropic-ai/claude-code
+          pip install aider-chat
 
-      - name: Run Claude (Bypass Mode)
+      - name: Run AI Code Assistant
         env:
-          ANTHROPIC_BASE_URL: http://localhost:11434
-          ANTHROPIC_AUTH_TOKEN: ollama
+          OLLAMA_API_BASE: http://localhost:11434
         run: |
-          # Usamos un nombre que Claude reconoce, pero Ollama lo interceptará 
-          # y servirá el modelo que cargamos en el paso anterior
-          claude -p "$(cat requirements.txt)" --model claude-3-5-sonnet-20241022 --dangerously-skip-permissions
-
-
+          # Read your requirements/prompt
+          PROMPT=$(cat requirements.txt 2>/dev/null || echo "Review and improve the code")
+          
+          # Run aider with Ollama backend
+          aider \
+            --model ollama/qwen2.5-coder:7b \
+            --no-auto-commits \
+            --yes \
+            --message "$PROMPT"
 
       - name: Commit and Push changes
         run: |
@@ -36,8 +49,8 @@ jobs:
           git add .
           
           if git diff --quiet && git diff --staged --quiet; then
-            echo "No hay cambios para subir."
+            echo "No changes to commit."
           else
-            git commit -m "feat: website updated by Claude Code (Local Qwen)"
+            git commit -m "feat: code updated by AI assistant (Qwen 2.5 Coder)"
             git push
           fi
