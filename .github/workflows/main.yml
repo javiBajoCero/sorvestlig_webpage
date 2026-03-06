@@ -62,9 +62,7 @@ jobs:
             --no-show-model-warnings \
             --exit \
             --message "$PROMPT" \
-            *.md \
-            *.txt \
-            *.html
+            .
 
       - name: Commit and Push changes
         run: |
