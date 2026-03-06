@@ -24,11 +24,13 @@ You are encouraged to:
 
 Constraints:
 - Keep the aesthetic **Nordic minimalism**
-- Keep the copper accent color: #b87333, but mainly the webpage colour is the one youll find in the .ico image background shades of that
+- the website main background colour should be #374050 and maybe shaed of that, the text in white bone.
+- Keep the copper accent color for menus maybe and the ø in sørvestlig: #b87333.
 - Maintain a professional and corporate tone
 - Do not add heavy frameworks (React, Angular, etc.)
 - Keep the site lightweight and fast
-
+- no phone , no madeup contact data, contact us should be trough linkedin https://www.linkedin.com/company/s%C3%B8rvestlig-embedded-firmware-as/
+ 
 You may:
 - Create CSS files
 - Create JavaScript files
