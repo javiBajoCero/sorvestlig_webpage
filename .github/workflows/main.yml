@@ -32,8 +32,10 @@ jobs:
 
       - name: Pull Model
         run: |
-          echo "Pulling qwen2.5-coder:7b model..."
-          ollama pull qwen2.5-coder:7b
+          # echo "Pulling qwen2.5-coder:7b model..."
+          # ollama pull qwen2.5-coder:7b
+          echo "Pulling qwen2.5-coder:14b"
+          ollama pull qwen2.5-coder:14b
           
           echo "Verifying model is available..."
           ollama list
