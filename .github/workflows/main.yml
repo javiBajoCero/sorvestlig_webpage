@@ -47,9 +47,10 @@ jobs:
             --no-pretty \
             --exit \
             --message "$PROMPT" \
-            app/PibScmc/src/*.cpp \
-            app/PibScmc/src/*.hpp \
-            app/PibScmc/source/*.asm
+            *.md \
+            *.txt\
+            *.html\
+            *ico
 
       - name: Commit and Push changes
         run: |
