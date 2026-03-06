@@ -1,7 +1,17 @@
-# Sørvestlig Embedded Firmware
+# Sørvestlig Embedded Firmware AS
 
-Hello! I'm an embedded engineer specializing in firmware development. At Sørvestlig Embedded Firmware AS, we create innovative and reliable solutions for your embedded systems needs.
+Welcome to the public GitHub Pages website of Sørvestlig Embedded Firmware AS.
 
-Visit our [LinkedIn page](https://www.linkedin.com/company/s%C3%B8rvestlig-embedded-firmware-as/) to learn more about our projects and services.
+## Project Structure
 
-Feel free to reach out if you have any questions or want to collaborate!
+- `index.html`: The main HTML file.
+- `styles.css`: The CSS file containing styles for the website.
+- `scripts.js`: The JavaScript file containing interactive elements.
+
+## Customization
+
+To customize the website, you can modify the `index.html`, `styles.css`, and `scripts.js` files as needed.
+
+## Deployment
+
+To deploy the website, simply push the changes to the `main` branch of your GitHub repository.
