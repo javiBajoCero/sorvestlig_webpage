@@ -21,10 +21,11 @@ jobs:
         env:
           ANTHROPIC_BASE_URL: http://localhost:11434
           ANTHROPIC_AUTH_TOKEN: ollama
+          CLAUDE_CODE_MODEL: qwen2.5-coder:7b  # Forzamos al CLI a reconocer este modelo
         run: |
-          # Usamos -p para modo script y definimos el modelo local explícitamente
-          # Asegúrate de que requirements.txt esté en la raíz del repo
+          # Intentamos la ejecución pasando el modelo directamente
           claude -p "$(cat requirements.txt)" --model qwen2.5-coder:7b --dangerously-skip-permissions
+
 
       - name: Commit and Push changes
         run: |
