@@ -17,10 +17,14 @@ You are encouraged to:
 - Improve SEO and metadata
 - Improve accessibility
 - Improve code structure and maintainability
+- dont include made up data such as phone.
+- year of formation is 2025
+- add this LinkedIn link as contact Sørvestlig Embedded Firmware AS https://share.google/ZcqKcW2e3Qm8oRcmH
+- explain a bit what embedded firmware is, for non technical public, basically stuff with stm32
 
 Constraints:
 - Keep the aesthetic **Nordic minimalism**
-- Keep the copper accent color: #b87333
+- Keep the copper accent color: #b87333, but mainly the webpage colour is the one youll find in the .ico image background shades of that
 - Maintain a professional and corporate tone
 - Do not add heavy frameworks (React, Angular, etc.)
 - Keep the site lightweight and fast
