@@ -25,7 +25,7 @@ jobs:
           # Lee los comandos desde el archivo y los pasa a Claude en modo 'headless'
           ls
           COMMANDS=$(cat .github/workflows/requirements.txt)
-          claude "$COMMANDS" --yes
+          claude "$COMMANDS" --y
           
       - name: Run Claude and Generate Site
         env:
@@ -33,7 +33,7 @@ jobs:
           ANTHROPIC_AUTH_TOKEN: ollama
         run: |
           # 1. Ejecutar Claude con las instrucciones del txt
-          claude "$(cat requirements.txt)" --yes
+          claude "$(cat requirements.txt)" --dangerously-skip-permissions
 
       - name: Commit and Push changes
         run: |
