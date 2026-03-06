@@ -1,0 +1,86 @@
+
+# 2026-03-06 20:56:34.386447
++You are an autonomous senior frontend engineer inside a GitHub Actions pipeline.
++
++This repository contains my public GitHub Pages website.
++I am an embedded systems engineer and the website represents my company:
++Sørvestlig Embedded Firmware AS.
++
++Your mission is to significantly improve the website.
++
++You are encouraged to:
++- Refactor the entire structure
++- Split HTML/CSS/JS into separate files
++- Create new files and folders
++- Improve layout and responsiveness
++- Add lightweight interactive elements
++- Improve typography and spacing
++- Add subtle animations or transitions
++- Improve SEO and metadata
++- Improve accessibility
++- Improve code structure and maintainability
++- dont include made up data such as phone.
++- year of formation is 2025
++- add this LinkedIn link as contact Sørvestlig Embedded Firmware AS https://share.google/ZcqKcW2e3Qm8oRcmH
++- explain a bit what embedded firmware is, for non technical public, basically stuff with stm32
++
++Constraints:
++- Keep the aesthetic **Nordic minimalism**
++- the website main background colour should be #374050 and maybe shaed of that, the text in white bone.
++- Keep the copper accent color for menus maybe and the ø in sørvestlig: #b87333.
++- Maintain a professional and corporate tone
++- Do not add heavy frameworks (React, Angular, etc.)
++- Keep the site lightweight and fast
++- no phone , no madeup contact data, contact us should be trough linkedin https://www.linkedin.com/company/s%C3%B8rvestlig-embedded-firmware-as/
++ 
++You may:
++- Create CSS files
++- Create JavaScript files
++- Create additional pages
++- Add favicon / assets
++- Improve README documentation
++
++Large changes and architectural improvements are welcome.
+
+# 2026-03-06 20:56:34.386543
++You are an autonomous senior frontend engineer inside a GitHub Actions pipeline.
++
++This repository contains my public GitHub Pages website.
++I am an embedded systems engineer and the website represents my company:
++Sørvestlig Embedded Firmware AS.
++
++Your mission is to significantly improve the website.
++
++You are encouraged to:
++- Refactor the entire structure
++- Split HTML/CSS/JS into separate files
++- Create new files and folders
++- Improve layout and responsiveness
++- Add lightweight interactive elements
++- Improve typography and spacing
++- Add subtle animations or transitions
++- Improve SEO and metadata
++- Improve accessibility
++- Improve code structure and maintainability
++- dont include made up data such as phone.
++- year of formation is 2025
++- add this LinkedIn link as contact Sørvestlig Embedded Firmware AS https://share.google/ZcqKcW2e3Qm8oRcmH
++- explain a bit what embedded firmware is, for non technical public, basically stuff with stm32
++
++Constraints:
++- Keep the aesthetic **Nordic minimalism**
++- the website main background colour should be #374050 and maybe shaed of that, the text in white bone.
++- Keep the copper accent color for menus maybe and the ø in sørvestlig: #b87333.
++- Maintain a professional and corporate tone
++- Do not add heavy frameworks (React, Angular, etc.)
++- Keep the site lightweight and fast
++- no phone , no madeup contact data, contact us should be trough linkedin https://www.linkedin.com/company/s%C3%B8rvestlig-embedded-firmware-as/
++ 
++You may:
++- Create CSS files
++- Create JavaScript files
++- Create additional pages
++- Add favicon / assets
++- Improve README documentation
++
++Large changes and architectural improvements are welcome.
