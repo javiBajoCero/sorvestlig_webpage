@@ -1,4 +1,4 @@
 Youre running inside a github actions pipeline.
 The content of this repo is my webpage deployed by github pages and made public.
 Improve if needed the already existing design, keep it super basic and functional, update the readme.
-Im an embedded engineer, make it geeky but appeable to the general public, respect those copper and tealy blue colours , also respect typography and nordic minimalism  style.
+Im an embedded engineer, make it geeky but appeable to the general public, respect those copper color: #b87333; and brackground border-bottom-color: #b87333; colours , also respect typography and nordic minimalism  style.
