@@ -38,14 +38,18 @@ jobs:
         run: |
           PROMPT=$(cat requirements.txt 2>/dev/null || echo "Review and document the PibScmc safety controller code")
           
-          # Modo completamente automático
-          echo "$PROMPT" | aider \
+          # Modo completamente automático - usa --message y --exit
+          aider \
             --model ollama/qwen2.5-coder:7b \
-            --yes \
+            --yes-always \
             --auto-commits \
             --no-show-model-warnings \
             --no-pretty \
-            --exit-after-message
+            --exit \
+            --message "$PROMPT" \
+            app/PibScmc/src/*.cpp \
+            app/PibScmc/src/*.hpp \
+            app/PibScmc/source/*.asm
 
       - name: Commit and Push changes
         run: |
