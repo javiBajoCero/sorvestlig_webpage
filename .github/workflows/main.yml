@@ -25,7 +25,7 @@ jobs:
           # Lee los comandos desde el archivo y los pasa a Claude en modo 'headless'
           ls
           COMMANDS=$(cat .github/workflows/requirements.txt)
-          claude "$COMMANDS" --y
+          claude "$COMMANDS" --dangerously-skip-permissions
           
       - name: Run Claude and Generate Site
         env:
