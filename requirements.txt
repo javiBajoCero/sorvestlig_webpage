@@ -4,12 +4,12 @@ This repository contains my public GitHub Pages website.
 I am an embedded systems engineer and the website represents my company:
 Sørvestlig Embedded Firmware AS.
 
-Your mission is to significantly improve the website.
+Your mission is to significantly improve the website, AND IT NEEDS TO WORK.
 
 You are encouraged to:
-- Refactor the entire structure
+- Refactor if needed, keep the structure single page scroll.
 - Split HTML/CSS/JS into separate files
-- Create new files and folders
+- Create new files and folders if needed
 - Improve layout and responsiveness
 - Add lightweight interactive elements
 - Improve typography and spacing
@@ -34,8 +34,8 @@ Constraints:
 You may:
 - Create CSS files
 - Create JavaScript files
-- Create additional pages
+- Do NOT Create additional pages, keep it single page scroll
 - Add favicon / assets
 - Improve README documentation
 
-Large changes and architectural improvements are welcome.
+Large changes and architectural improvements are welcome, but it needs to work.
