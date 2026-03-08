@@ -9,6 +9,7 @@ body {
 header {
     background-color: #b87333;
     padding: 1rem 0;
+    text-align: center;
 }
 
 nav ul {
@@ -30,6 +31,11 @@ nav ul li a {
 
 main {
     padding: 2rem;
+    text-align: center;
+}
+
+section {
+    margin: 2rem 0;
 }
 
 footer {
@@ -39,4 +45,9 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
 }
