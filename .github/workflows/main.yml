@@ -13,36 +13,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install Ollama Manually
-        run: |
-          curl -fsSL https://ollama.com/install.sh | sh
-          
-          # Start Ollama service in background
-          ollama serve &
-          
-          # Wait for service to be ready
-          echo "Waiting for Ollama to start..."
-          sleep 15
-          
-          # Verify service is running
-          curl -s http://localhost:11434/api/tags || {
-            echo "Ollama failed to start"
-            exit 1
-          }
+      - name: Setup Ollama
+        uses: ai-action/setup-ollama@v2
+        with:
+          model: qwen2.5-coder:7b
 
-      - name: Pull Model
+      - name: Verify Ollama and Model
         run: |
-          # echo "Pulling qwen2.5-coder:7b model..."
-          # ollama pull qwen2.5-coder:7b
-          echo "Pulling qwen2.5-coder:14b"
-          ollama pull qwen2.5-coder:14b
-          
-          echo "Verifying model is available..."
+          echo "Waiting for Ollama to be ready..."
+          sleep 10
           ollama list
-          
-          # Test the model with a simple prompt
-          echo "Testing model..."
-          ollama run qwen2.5-coder:7b "Hello" --verbose
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -52,30 +32,36 @@ jobs:
       - name: Install aider
         run: pip install aider-chat
 
-      - name: Run AI Code Assistant
+      - name: Run AI Code Assistant (Non-Interactive)
         env:
           OLLAMA_API_BASE: http://localhost:11434
         run: |
-          PROMPT=$(cat requirements.txt 2>/dev/null || echo "Review the code and suggest improvements")
+          PROMPT=$(cat requirements.txt 2>/dev/null || echo "Review and document the PibScmc safety controller code")
+          
           # Modo completamente automático - usa --message y --exit
           aider \
             --model ollama/qwen2.5-coder:7b \
             --yes-always \
+            --auto-commits \
             --no-show-model-warnings \
+            --no-pretty \
             --exit \
             --message "$PROMPT" \
-            .
+            *.md \
+            *.txt\
+            *.html\
+            *ico
 
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-      
-          # Stage any leftover changes
-          git add -A
-      
-          # Try committing workflow changes (if any)
-          git commit -m "feat: workflow updates" || echo "No manual changes"
-      
-          # Push ALL commits (including aider commits)
-          git push
+          
+          git add .
+          
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "feat: AI code review by Qwen 2.5 Coder"
+            git push
+          fi

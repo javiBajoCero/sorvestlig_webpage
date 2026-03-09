@@ -3,47 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sørvestlig Embedded Firmware AS</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" href="ø.ico" type="image/x-icon">
+    <title>Sørvestlig Embedded Firmware</title>
+    <link rel="icon" type="image/x-icon" href="/ø.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #2d3a45 0%, #36454f 100%);
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .container {
+            max-width: 600px;
+        }
+
+        p {
+            color: white;
+            font-size: 1.5rem;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 2px solid rgba(184, 115, 51, 0.5);
+            transition: all 0.3s ease;
+            display: inline-block;
+            padding-bottom: 2px;
+        }
+
+        a:hover {
+            border-bottom-color: #b87333;
+            transform: translateY(-2px);
+        }
+
+        .copper {
+            color: #b87333;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        a:hover .copper {
+            transform: scale(1.1);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            p { font-size: 1.2rem; }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h1>Welcome to Sørvestlig Embedded Firmware AS</h1>
-            <p>Hard-won embedded firmware experience, delivered as no-nonsense consultancy.</p>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are a company specializing in IT System Custom Software Development. Our expertise lies in delivering high-quality embedded firmware solutions.</p>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>Our services include:</p>
-            <ul>
-                <li>Custom firmware development for STM32 microcontrollers</li>
-                <li>Consultancy for embedded systems projects</li>
-                <li>Support and maintenance of existing firmware</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>For more information, please visit our LinkedIn page: <a href="https://www.linkedin.com/company/s%C3%B8rvestlig-embedded-firmware-as" target="_blank">Sørvestlig Embedded Firmware AS</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Sørvestlig Embedded Firmware AS</p>
-    </footer>
-    <script src="assets/js/scripts.js"></script>
+    <div class="container">
+        <p>
+            Too busy coding embedded firmware to build a proper webpage. <br>
+            <a href="https://www.linkedin.com/company/s%C3%B8rvestlig-embedded-firmware-as/" target="_blank">
+                S<span class="copper">ø</span>rvestlig Embedded Firmware AS
+            </a>
+        </p>
+    </div>
 </body>
 </html>
