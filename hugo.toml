@@ -20,13 +20,13 @@ weight = 10
 
 [[menu.main]]
 identifier = "team"
-name = "team"
+name = "Team"
 url = "/team/"
 weight = 20
 
 [[menu.main]]
 identifier = "careers"
-name = "careers"
+name = "Careers"
 url = "/careers/"
 weight = 30
 
@@ -36,5 +36,10 @@ weight = 30
       unsafe = true
 
 [params]
-    disableCopyright = true       # Hides the copyright line
-    disableHugoGeneratorInject = true # Hides the "Powered by" line
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  disableHugoGeneratorInject = true
+
+  # This forces the homepage list to show projects instead of careers
+  mainSections = ["projects"]
