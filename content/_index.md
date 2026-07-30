@@ -3,25 +3,31 @@ title: "Home"
 ---
 
 <h1>
-s<span class="copper">ø</span>rvestlig embedded firmware AS
+S<span class="copper">ø</span>rvestlig Embedded Firmware AS
 </h1>
 
-We are a very small engineering company based in Stavanger, Norway, founded february/2026.
+We are a very small engineering company based in Stavanger, Norway, founded in February 2026.
 
-We work with firmware development, power electronics, energy systems, PCB design, and the practical challenges that come with building real products.
+We work with firmware development, power electronics, energy systems, PCB design, and the practical challenges of building real products.
 
 Our main focus is firmware, but we usually end up involved in many parts of product development, from early concepts and prototypes to production-ready systems.
 
     We design for real products, not just MVPs.
 
-<h2>Contact</h2>
-
 <p>
+<a class="contact-button" href="javascript:window.location='mailto:'+'javier'+'@'+'sorvestlig.com'">
+    ✉
+</a>
+
 <a class="linkedin-button" href="https://www.linkedin.com/company/s%C3%B8rvestlig-embedded-firmware-as/" target="_blank">
     <svg class="linkedin-icon" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.87 0-2.15 1.46-2.15 2.96v5.66H9.32V8.98h3.41v1.57h.05c.48-.9 1.64-1.86 3.37-1.86 3.6 0 4.27 2.37 4.27 5.46v6.3zM5.3 7.41a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.52 20.45h3.56V8.98H3.52v11.47z"/>
     </svg>
+    LinkedIn
 </a>
 </p>
 
-Sørvestlig Embedded Firmware AS (org. 937226411)
+---
+
+Sørvestlig Embedded Firmware AS  
+(org. 937226411)
