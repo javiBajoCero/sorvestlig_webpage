@@ -13,9 +13,9 @@ ShowReadingTime = true
 ShowCodeCopyButtons = true
 
 [[menu.main]]
-identifier = "posts"
-name = "Posts"
-url = "/posts/"
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
 weight = 10
 
 [markup]
