@@ -1,6 +1,6 @@
 baseURL = "https://www.sorvestlig.com/"
 languageCode = "en-us"
-title = "hola"
+title = "sørvestlig"
 
 theme = "PaperMod"
 
@@ -17,6 +17,18 @@ identifier = "projects"
 name = "Projects"
 url = "/projects/"
 weight = 10
+
+[[menu.main]]
+identifier = "team"
+name = "team"
+url = "/team/"
+weight = 20
+
+[[menu.main]]
+identifier = "careers"
+name = "careers"
+url = "/careers/"
+weight = 30
 
 [markup]
   [markup.goldmark]
