@@ -1,0 +1,19 @@
+baseURL = "https://javibajocero.github.io/sorvestlig_webpage/"
+languageCode = "en-us"
+title = "Sørvestlig"
+
+theme = "PaperMod"
+
+[pagination]
+pagerSize = 5
+
+[params]
+defaultTheme = "auto"
+ShowReadingTime = true
+ShowCodeCopyButtons = true
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 10
