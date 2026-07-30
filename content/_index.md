@@ -5,19 +5,11 @@ title: "Home"
 <h1>
 S<span class="copper">ø</span>rvestlig Embedded Firmware AS
 </h1>
-
 We are a very small engineering company based in Stavanger, Norway, founded in February 2026.
 
-We work with firmware development, power electronics, energy systems, PCB design, and the practical challenges of building real products.
-
-Our main focus is firmware, but we usually end up involved in many parts of product development, from early concepts and prototypes to production-ready systems.
+Our main focus is firmware, but we usually end up involved in many parts of product development(Hardware, Systems, Power electronics, energy ...etc), from early concepts and prototypes to production-ready systems.
 
     We design for real products, not just MVPs.
-
-<p>
-<a class="contact-button" href="javascript:window.location='mailto:'+'hi'+'@'+'sorvestlig.com'">
-    ✉
-</a>
 
 <a class="linkedin-button" href="https://www.linkedin.com/company/s%C3%B8rvestlig-embedded-firmware-as/" target="_blank">
     <svg class="linkedin-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -29,5 +21,5 @@ Our main focus is firmware, but we usually end up involved in many parts of prod
 
 ---
 
-Sørvestlig Embedded Firmware AS  
+sørvestlig embedded firmware AS  
 (org. 937226411)
