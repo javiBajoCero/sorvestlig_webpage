@@ -17,3 +17,8 @@ identifier = "posts"
 name = "Posts"
 url = "/posts/"
 weight = 10
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
