@@ -2,10 +2,22 @@
 title: "Home"
 ---
 
-# Welcome 👋
+# Sørvestlig Embedded Firmware AS
 
-This is **Sørvestlig**, a simple website built with **Hugo** and the **PaperMod** theme.
+We are a small engineering company based in Stavanger, Norway.
 
-This site is automatically built and deployed using **GitHub Actions**.
+We work with firmware development, power electronics, energy systems, PCB design, and the practical challenges that come with building real products.
 
-Feel free to browse the posts and follow the project as it grows.
+Our main focus is firmware, but we usually end up involved in many parts of product development, from early concepts and prototypes to production-ready systems.
+
+    We design for real products, not just MVPs.
+
+## Contact
+
+Follow us on LinkedIn:
+
+https://www.linkedin.com/company/s%C3%B8rvestlig-embedded-firmware-as/
+
+---
+
+Sørvestlig Embedded Firmware AS (org. 937226411)
