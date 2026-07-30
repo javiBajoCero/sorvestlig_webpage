@@ -34,3 +34,7 @@ weight = 30
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[params]
+    disableCopyright = true       # Hides the copyright line
+    disableHugoGeneratorInject = true # Hides the "Powered by" line
