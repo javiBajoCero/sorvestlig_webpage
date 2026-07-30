@@ -2,7 +2,7 @@
 title: "Home"
 ---
 
-# Sørvestlig Embedded Firmware AS
+# s<span class="copper">ø</span>rvestlig embedded firmware AS
 
 We are a small engineering company based in Stavanger, Norway.
 

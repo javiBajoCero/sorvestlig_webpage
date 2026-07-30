@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Clean engineering typography */
+.post-title,
+.first-entry .entry-header h1 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.post-content {
+    line-height: 1.8;
+}
+
+/* Copper Ø brand accent */
+.copper {
+    color: #b87333;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.copper:hover {
+    transform: scale(1.1);
+}
+
+/* Subtle copper link underline */
+.post-content a {
+    border-bottom: 2px solid rgba(184, 115, 51, 0.5);
+}
+
+.post-content a:hover {
+    border-bottom-color: #b87333;
+}
