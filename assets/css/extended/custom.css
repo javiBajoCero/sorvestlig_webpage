@@ -18,12 +18,6 @@ body {
 /* Copper Ø brand accent */
 .copper {
     color: #b87333;
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.copper:hover {
-    transform: scale(1.1);
 }
 
 /* Subtle copper link underline */
@@ -33,4 +27,24 @@ body {
 
 .post-content a:hover {
     border-bottom-color: #b87333;
+}
+
+/* LinkedIn button */
+.linkedin-button {
+    display: inline-block;
+    padding: 10px 22px;
+    border: 1px solid #b87333 !important;
+    border-bottom: 1px solid #b87333 !important;
+    border-radius: 6px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.linkedin-button:hover {
+    background: #b87333;
+    color: white;
+    border-color: #b87333 !important;
+    transform: translateY(-2px);
 }
