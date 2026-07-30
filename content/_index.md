@@ -2,7 +2,9 @@
 title: "Home"
 ---
 
-# s<span class="copper">ø</span>rvestlig embedded firmware AS
+<h1>
+s<span class="copper">ø</span>rvestlig embedded firmware AS
+</h1>
 
 We are a small engineering company based in Stavanger, Norway.
 
