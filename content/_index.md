@@ -15,7 +15,7 @@ Our main focus is firmware, but we usually end up involved in many parts of prod
     We design for real products, not just MVPs.
 
 <p>
-<a class="contact-button" href="javascript:window.location='mailto:'+'javier'+'@'+'sorvestlig.com'">
+<a class="contact-button" href="javascript:window.location='mailto:'+'hi'+'@'+'sorvestlig.com'">
     ✉
 </a>
 
