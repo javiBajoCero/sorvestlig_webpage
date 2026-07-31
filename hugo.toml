@@ -14,9 +14,10 @@ defaultContentLanguage = "en"
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
   [languages.en.params]
-    [languages.en.params.logo]
+    [languages.en.params.Logo]
       logoText = "sørvestlig"
-      logoHomeLink = "/"
+      LogoHomeLink = "/"
+      logoCursorColor = "#b87333"
 
   [[languages.en.menu.main]]
   identifier = "home"
@@ -50,9 +51,10 @@ defaultContentLanguage = "en"
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
   [languages.es.params]
-    [languages.es.params.logo]
+    [languages.es.params.Logo]
       logoText = "sørvestlig"
-      logoHomeLink = "/"
+      LogoHomeLink = "/"
+      logoCursorColor = "#b87333"
 
   [[languages.es.menu.main]]
   identifier = "home"
@@ -86,9 +88,10 @@ defaultContentLanguage = "en"
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
   [languages.nb.params]
-    [languages.nb.params.logo]
+    [languages.nb.params.Logo]
       logoText = "sørvestlig"
-      logoHomeLink = "/"
+      LogoHomeLink = "/"
+      logoCursorColor = "#b87333"
 
   [[languages.nb.menu.main]]
   identifier = "home"
@@ -124,9 +127,15 @@ pagerSize = 5
 
 [params]
   defaultTheme = "auto"
+  EnableGlobalLanguageMenu = true
   ShowReadingTime = true
   ShowCodeCopyButtons = true
   disableHugoGeneratorInject = true
+
+  [params.Logo]
+    logoText = "sørvestlig"
+    LogoHomeLink = "/"
+    logoCursorColor = "#b87333"
 
   # This forces the homepage list to show projects instead of careers
   mainSections = ["projects"]
