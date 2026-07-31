@@ -1,20 +1,27 @@
 ---
-title: "Eksempelprosjekt"
-date: 2026-07-30
+title: "MASENTINEL Sensorer For Nettstasjoner"
+date: 2026-03-01
+translationKey: "project-masentinel-1"
 ---
 
-Kort beskrivelse av prosjektet.
+Teknisk leder for MASENTINEL-sensorer for nettstasjoner, startet i mars 2026.
+
+Prosjektlenke: [masensetech.com](https://masensetech.com/)
 
 ## Oversikt
 
-Hva som ble bygget, hvorfor det ble bygget, og de viktigste ingeniormessige utfordringene.
+Helhetlig teknisk ledelse for MASENTINEL sensorsystemer i kraftnettets nettstasjoner.
+
+Ansvarsomradet inkluderte arkitekturdefinisjon, firmwareutvikling, hardware-retning og eierskap til tekniske spesifikasjoner.
 
 ## Teknologier
 
+- Tilpasset arkitektur
 - Embedded firmware
-- PCB-design
+- Hardware-design
+- Tekniske spesifikasjoner
 - Kraftelektronikk
 
 ## Resultater
 
-Hva som ble oppnadd.
+Ledet og veiledet et motivert team pa tre ingeniører i Madrid, med leveranser rettet mot produksjon.
