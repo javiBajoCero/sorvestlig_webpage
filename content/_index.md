@@ -18,8 +18,3 @@ Our main focus is firmware, but we usually end up involved in many parts of prod
     LinkedIn
 </a>
 </p>
-
----
-
-sørvestlig embedded firmware AS  
-(org. 937226411)

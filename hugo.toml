@@ -7,11 +7,6 @@ theme = "PaperMod"
 [pagination]
 pagerSize = 5
 
-[params]
-defaultTheme = "auto"
-ShowReadingTime = true
-ShowCodeCopyButtons = true
-
 [[menu.main]]
 identifier = "projects"
 name = "Projects"
