@@ -3,29 +3,27 @@
 {{ end }}
 
 {{ define "main" }}
-  <div class="content-center">
-    <main>
-      {{ if .Content }}
-        <div class="index-content">
-          {{ .Content }}
-        </div>
-      {{ else }}
-        <div>
-          {{ if .Site.Params.Portrait.Path }}
-            <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
-          {{ end }}
+  <main class="post">
+    {{ if .Content }}
+      <div class="post-content index-content">
+        {{ .Content }}
+      </div>
+    {{ else }}
+      <div class="post-content index-content">
+        {{ if .Site.Params.Portrait.Path }}
+          <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
+        {{ end }}
 
-          <h1>{{ .Site.Title }}</h1>
+        <h1>{{ .Site.Title }}</h1>
 
-          {{ partial "subtitle.html" . }}
+        {{ partial "subtitle.html" . }}
 
-          {{ with .Site.Params.social }}
-            <div>
-              {{ partial "social-icons.html" . }}
-            </div>
-          {{ end }}
-        </div>
-      {{ end }}
-    </main>
-  </div>
+        {{ with .Site.Params.social }}
+          <div>
+            {{ partial "social-icons.html" . }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </main>
 {{ end }}

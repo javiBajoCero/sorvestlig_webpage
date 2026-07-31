@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.post-title,
+.first-entry .entry-header h1 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.post-content {
+    line-height: 1.75;
+}
+
+.index-content {
+    text-align: left;
+}
+
+.copper {
+    color: #b87333;
+}
+
+.post-content a:not(.linkedin-button) {
+    border-bottom: 2px solid rgba(184, 115, 51, 0.5);
+}
+
+.post-content a:not(.linkedin-button):hover {
+    border-bottom-color: #b87333;
+}
+
+.linkedin-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    margin-top: 4px;
+    color: #0a66c2;
+    border: 0 !important;
+    border-bottom: 0 !important;
+    text-decoration: none;
+    background: transparent;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.linkedin-button:hover {
+    transform: translateY(-1px);
+    opacity: 0.8;
+}
+
+.linkedin-icon {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+}
+
+.footer-center {
+    text-align: center;
+}

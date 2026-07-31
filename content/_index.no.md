@@ -9,7 +9,7 @@ Vi er et veldig lite ingeniorselskap basert i Stavanger, Norge, grunnlagt i febr
 
 Hovedfokuset vart er firmware, men vi blir ofte involvert i mange deler av produktutvikling (hardware, systemer, kraftelektronikk, energi osv.), fra tidlige konsepter og prototyper til produksjonsklare systemer.
 
-    Vi designer for ekte produkter, ikke bare MVP-er.
+Vi designer for ekte produkter, ikke bare MVP-er.
 
 <a class="linkedin-button" href="https://www.linkedin.com/company/s%C3%B8rvestlig-embedded-firmware-as/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
     <svg class="linkedin-icon" viewBox="0 0 24 24" aria-hidden="true">

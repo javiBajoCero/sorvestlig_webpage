@@ -80,38 +80,38 @@ defaultContentLanguage = "en"
   url = "/careers/"
   weight = 40
 
-  [languages.nb]
+  [languages.no]
     languageName = "Norsk Bokmål"
-    languageCode = "nb"
+    languageCode = "no"
     weight = 3
     title = "sørvestlig"
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
-  [languages.nb.params]
-    [languages.nb.params.Logo]
+  [languages.no.params]
+    [languages.no.params.Logo]
       logoText = "sørvestlig"
       LogoHomeLink = "/"
       logoCursorColor = "#b87333"
 
-  [[languages.nb.menu.main]]
+  [[languages.no.menu.main]]
   identifier = "home"
   name = "Hjem"
   url = "/"
   weight = 10
 
-  [[languages.nb.menu.main]]
+  [[languages.no.menu.main]]
   identifier = "projects"
   name = "Prosjekter"
   url = "/projects/"
   weight = 20
 
-  [[languages.nb.menu.main]]
+  [[languages.no.menu.main]]
   identifier = "team"
   name = "Team"
   url = "/team/"
   weight = 30
 
-  [[languages.nb.menu.main]]
+  [[languages.no.menu.main]]
   identifier = "careers"
   name = "Karriere"
   url = "/careers/"
@@ -127,10 +127,11 @@ pagerSize = 5
 
 [params]
   defaultTheme = "auto"
-  EnableGlobalLanguageMenu = true
+  EnableGlobalLanguageMenu = false
   ShowReadingTime = true
   ShowCodeCopyButtons = true
   disableHugoGeneratorInject = true
+  customCSS = ["/css/extended/custom.css"]
 
   [params.Logo]
     logoText = "sørvestlig"

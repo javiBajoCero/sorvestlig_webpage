@@ -9,7 +9,7 @@ Somos una empresa de ingeniería muy pequeña con sede en Stavanger, Noruega, fu
 
 Nuestro enfoque principal es el firmware, pero normalmente terminamos involucrados en muchas partes del desarrollo de producto (hardware, sistemas, electrónica de potencia, energía, etc.), desde conceptos tempranos y prototipos hasta sistemas listos para producción.
 
-    Diseñamos para productos reales, no solo MVP.
+Diseñamos para productos reales, no solo MVP.
 
 <a class="linkedin-button" href="https://www.linkedin.com/company/s%C3%B8rvestlig-embedded-firmware-as/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
     <svg class="linkedin-icon" viewBox="0 0 24 24" aria-hidden="true">
