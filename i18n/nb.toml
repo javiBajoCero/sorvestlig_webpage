@@ -1,0 +1,32 @@
+[translations]
+other = "Oversettelser"
+
+[postAvailable]
+other = "Ogsaa tilgjengelig paa"
+
+[archives]
+other = "Arkiv"
+
+[home]
+other = "Hjem"
+
+[notFound]
+other = "Oops, siden ble ikke funnet..."
+
+[readingTime]
+one = "Ett minutt"
+other = "{{ .Count }} minutter"
+
+[tableOfContents]
+other = "Innholdsfortegnelse"
+
+[wordCount]
+one = "Ett ord"
+other = "{{ .Count }} ord"
+
+[lastModified]
+other = "Sist oppdatert"
+
+[pagination]
+newerPosts = "Nyere innlegg"
+olderPosts = "Eldre innlegg"

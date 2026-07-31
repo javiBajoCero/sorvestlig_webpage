@@ -3,33 +3,119 @@ languageCode = "en-us"
 title = "sørvestlig"
 
 theme = "hugo-theme-hello-friend-ng"
+defaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 1
+    title = "sørvestlig"
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+  [languages.en.params]
+    [languages.en.params.logo]
+      logoText = "sørvestlig"
+      logoHomeLink = "/"
+
+  [[languages.en.menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 10
+
+  [[languages.en.menu.main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/projects/"
+  weight = 20
+
+  [[languages.en.menu.main]]
+  identifier = "team"
+  name = "Team"
+  url = "/team/"
+  weight = 30
+
+  [[languages.en.menu.main]]
+  identifier = "careers"
+  name = "Careers"
+  url = "/careers/"
+  weight = 40
+
+  [languages.es]
+    languageName = "Español"
+    languageCode = "es"
+    weight = 2
+    title = "sørvestlig"
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+  [languages.es.params]
+    [languages.es.params.logo]
+      logoText = "sørvestlig"
+      logoHomeLink = "/"
+
+  [[languages.es.menu.main]]
+  identifier = "home"
+  name = "Inicio"
+  url = "/"
+  weight = 10
+
+  [[languages.es.menu.main]]
+  identifier = "projects"
+  name = "Proyectos"
+  url = "/projects/"
+  weight = 20
+
+  [[languages.es.menu.main]]
+  identifier = "team"
+  name = "Equipo"
+  url = "/team/"
+  weight = 30
+
+  [[languages.es.menu.main]]
+  identifier = "careers"
+  name = "Carreras"
+  url = "/careers/"
+  weight = 40
+
+  [languages.nb]
+    languageName = "Norsk Bokmål"
+    languageCode = "nb"
+    weight = 3
+    title = "sørvestlig"
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+  [languages.nb.params]
+    [languages.nb.params.logo]
+      logoText = "sørvestlig"
+      logoHomeLink = "/"
+
+  [[languages.nb.menu.main]]
+  identifier = "home"
+  name = "Hjem"
+  url = "/"
+  weight = 10
+
+  [[languages.nb.menu.main]]
+  identifier = "projects"
+  name = "Prosjekter"
+  url = "/projects/"
+  weight = 20
+
+  [[languages.nb.menu.main]]
+  identifier = "team"
+  name = "Team"
+  url = "/team/"
+  weight = 30
+
+  [[languages.nb.menu.main]]
+  identifier = "careers"
+  name = "Karriere"
+  url = "/careers/"
+  weight = 40
 
 [pagination]
 pagerSize = 5
-
-[[menu.main]]
-identifier = "home"
-name = "Home"
-url = "/"
-weight = 10
-
-[[menu.main]]
-identifier = "projects"
-name = "Projects"
-url = "/projects/"
-weight = 20
-
-[[menu.main]]
-identifier = "team"
-name = "Team"
-url = "/team/"
-weight = 30
-
-[[menu.main]]
-identifier = "careers"
-name = "Careers"
-url = "/careers/"
-weight = 40
 
 [markup]
   [markup.goldmark]
