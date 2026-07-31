@@ -12,7 +12,7 @@ Nuestro enfoque principal es el firmware, pero normalmente terminamos involucrad
 Diseñamos para productos reales, no solo MVP.
 
 <a class="linkedin-button" href="https://www.linkedin.com/company/s%C3%B8rvestlig-embedded-firmware-as/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
-    <svg class="linkedin-icon" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.87 0-2.15 1.46-2.15 2.96v5.66H9.32V8.98h3.41v1.57h.05c.48-.9 1.64-1.86 3.37-1.86 3.6 0 4.27 2.37 4.27 5.46v6.3zM5.3 7.41a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.52 20.45h3.56V8.98H3.52v11.47z"/>
+    <svg class="linkedin-icon" viewBox="0 0 16 16" aria-hidden="true">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zM4.943 13.394V6.169H2.542v7.225zM3.743 5.182c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.225 2.4 3.934c0 .694.506 1.248 1.327 1.248h.016zm9.651 8.212V9.359c0-2.162-1.154-3.168-2.692-3.168-1.24 0-1.795.681-2.104 1.16v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169H6.2c.03.782 0 7.225 0 7.225h2.401V9.36c0-.215.016-.43.079-.584.173-.43.568-.875 1.232-.875.869 0 1.216.66 1.216 1.628v3.865z"/>
     </svg>
 </a>
