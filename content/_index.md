@@ -5,7 +5,7 @@ title: "Home"
 <h1>
 S<span class="copper">ø</span>rvestlig Embedded Firmware AS
 </h1>
-We are a very small engineering company based in Stavanger, Norway, founded in February 2026.
+We are a engineering company based in Stavanger, Norway, founded in February 2026.
 
 Our main focus is firmware, but we usually end up involved in many parts of product development(Hardware, Systems, Power electronics, energy ...etc), from early concepts and prototypes to production-ready systems.
 

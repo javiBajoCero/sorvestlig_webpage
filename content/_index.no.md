@@ -5,7 +5,7 @@ title: "Hjem"
 <h1>
 S<span class="copper">ø</span>rvestlig Embedded Firmware AS
 </h1>
-Vi er et veldig lite ingeniorselskap basert i Stavanger, Norge, grunnlagt i februar 2026.
+Vi er et ingeniorselskap basert i Stavanger, Norge, grunnlagt i februar 2026.
 
 Hovedfokuset vart er firmware, men vi blir ofte involvert i mange deler av produktutvikling (hardware, systemer, kraftelektronikk, energi osv.), fra tidlige konsepter og prototyper til produksjonsklare systemer.
 
