@@ -2,7 +2,7 @@ baseURL = "https://www.sorvestlig.com/"
 languageCode = "en-us"
 title = "sørvestlig"
 
-theme = "PaperMod"
+theme = "hugo-coder"
 
 [pagination]
 pagerSize = 5
