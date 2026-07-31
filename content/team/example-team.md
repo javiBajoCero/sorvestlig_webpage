@@ -1,8 +1,9 @@
 ---
-title: "Your Name"
-date: 2026-07-30
+title: "Javier Muñoz Sáez"
 weight: 1
-email: "name@sorvestlig.com"
+role: "Founder"
+description: "Seasoned telecom electronics engineer, specializing in firmware and power electronics."
+email: "javier@sorvestlig.com"
 photo: "/images/team/javier.jpg"
 translationKey: "team-member-1"
 ---

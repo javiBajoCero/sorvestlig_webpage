@@ -167,6 +167,23 @@ body {
     font-size: 0.95rem;
 }
 
+.team-member__role {
+    color: inherit;
+    opacity: 0.38;
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.team-member__description {
+    color: inherit;
+    opacity: 0.48;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    max-width: 28ch;
+    text-align: center;
+}
+
 .team-member:hover .team-member__photo {
     filter: grayscale(100%) contrast(1.1);
     opacity: 0.88;
@@ -174,4 +191,12 @@ body {
 
 .team-member:hover .team-member__name {
     opacity: 0.7;
+}
+
+.team-member:hover .team-member__role {
+    opacity: 0.55;
+}
+
+.team-member:hover .team-member__description {
+    opacity: 0.68;
 }

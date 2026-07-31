@@ -1,8 +1,9 @@
 ---
-title: "Ditt Navn"
-date: 2026-07-30
+title: "Javier Muñoz Sáez"
 weight: 1
-email: "name@sorvestlig.com"
+role: "Grunnlegger"
+description: "Erfaren telekom-elektronikkingenior med spesialisering i firmware og kraftelektronikk."
+email: "javier@sorvestlig.com"
 photo: "/images/team/javier.jpg"
 translationKey: "team-member-1"
 ---

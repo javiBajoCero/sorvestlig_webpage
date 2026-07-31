@@ -13,6 +13,8 @@
       {{ if gt (len $members) 0 }}
         {{ $member := index $members 0 }}
         {{ $email := $member.Params.email }}
+        {{ $role := $member.Params.role }}
+        {{ $description := $member.Params.description }}
 
         <a class="team-member" href="mailto:{{ $email }}" aria-label="Email {{ $member.Title }}">
           {{ if $member.Params.photo }}
@@ -21,6 +23,12 @@
             <div class="team-member__photo team-member__photo--placeholder" aria-hidden="true">Photo</div>
           {{ end }}
           <span class="team-member__name">{{ $member.Title }}</span>
+          {{ with $role }}
+            <span class="team-member__role">{{ . }}</span>
+          {{ end }}
+          {{ with $description }}
+            <span class="team-member__description">{{ . }}</span>
+          {{ end }}
         </a>
       {{ end }}
     </main>
