@@ -1,6 +1,6 @@
 <nav class="menu">
     <ul class="menu__inner">
-        {{ range .Site.Menus.main }}
+        {{ range .Site.Menus.main.ByWeight }}
             {{ if .HasChildren }}
                 <div class="submenu">
                     <li class="dropdown">
@@ -18,9 +18,11 @@
         {{ end }}
 
         {{ if hugo.IsMultilingual }}
-            {{ range $.Sites }}
-                <li><a href="{{ .Home.RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+            <li class="menu__lang">
+                {{ range $index, $site := $.Sites }}
+                    <a class="menu__lang-link{{ if eq $.Site.Language.Lang $site.Language.Lang }} is-active{{ end }}" href="{{ $site.Home.RelPermalink }}">{{ $site.Language.Lang }}</a>{{ if lt (add $index 1) (len $.Sites) }}<span class="menu__lang-sep">|</span>{{ end }}
+                {{ end }}
+            </li>
             {{ end }}
-        {{ end }}
     </ul>
 </nav>
