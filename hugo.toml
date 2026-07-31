@@ -2,7 +2,7 @@ baseURL = "https://www.sorvestlig.com/"
 languageCode = "en-us"
 title = "sørvestlig"
 
-theme = "hugo-coder"
+theme = "hugo-theme-hello-friend-ng"
 
 [pagination]
 pagerSize = 5
