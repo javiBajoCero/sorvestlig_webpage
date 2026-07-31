@@ -13,10 +13,11 @@
       {{ if gt (len $members) 0 }}
         {{ $member := index $members 0 }}
         {{ $email := $member.Params.email }}
+        {{ $emailB64 := $email | base64Encode }}
         {{ $role := $member.Params.role }}
         {{ $description := $member.Params.description }}
 
-        <a class="team-member" href="mailto:{{ $email }}" aria-label="Email {{ $member.Title }}">
+        <a class="team-member js-email-link" href="#" data-email="{{ $emailB64 }}" aria-label="Email {{ $member.Title }}" rel="nofollow">
           {{ if $member.Params.photo }}
             <img class="team-member__photo" src="{{ $member.Params.photo | relURL }}" alt="{{ $member.Title }}" />
           {{ else }}
@@ -33,4 +34,22 @@
       {{ end }}
     </main>
   </div>
+
+  <script>
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest(".js-email-link");
+      if (!link) {
+        return;
+      }
+
+      event.preventDefault();
+      var encoded = link.getAttribute("data-email");
+      if (!encoded) {
+        return;
+      }
+
+      var email = atob(encoded);
+      window.location.href = "mailto:" + email;
+    });
+  </script>
 {{ end }}
