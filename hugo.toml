@@ -8,6 +8,12 @@ theme = "PaperMod"
 pagerSize = 5
 
 [[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 0
+
+[[menu.main]]
 identifier = "projects"
 name = "Projects"
 url = "/projects/"

@@ -56,3 +56,7 @@ body {
     height: 18px;
     fill: currentColor;
 }
+
+.footer-center {
+    text-align: center;
+}
