@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <div class="content">
+    <main class="post team-page">
+      <h1>{{ .Title }}</h1>
+
+      {{ with .Content }}
+        <div class="post-content">
+          {{ . }}
+        </div>
+      {{ end }}
+
+      {{ $members := .RegularPages.ByWeight }}
+      {{ if gt (len $members) 0 }}
+        {{ $member := index $members 0 }}
+        {{ $email := $member.Params.email }}
+
+        <a class="team-member" href="mailto:{{ $email }}" aria-label="Email {{ $member.Title }}">
+          {{ if $member.Params.photo }}
+            <img class="team-member__photo" src="{{ $member.Params.photo | relURL }}" alt="{{ $member.Title }}" />
+          {{ else }}
+            <div class="team-member__photo team-member__photo--placeholder" aria-hidden="true">Photo</div>
+          {{ end }}
+          <span class="team-member__name">{{ $member.Title }}</span>
+        </a>
+      {{ end }}
+    </main>
+  </div>
+{{ end }}
