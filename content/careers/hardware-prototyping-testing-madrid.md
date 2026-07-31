@@ -49,4 +49,4 @@ We are looking for hands-on experience in production electronics testing and har
 - Python scripting for testing.
 - Familiarity with Git.
 
-[Apply](mailto:info@masensetech.com?subject=Application%20-%20Hardware%20Prototyping%20and%20Production%20Testing%20Engineer)
+[Apply](mailto:info@masensetech.com?subject=Application%20-%20Hardware%20Prototyping%20and%20Production%20Testing%20Engineer) - Please be nice: we review every application manually. Do not send bloated AI text, just be a real person.

@@ -54,4 +54,4 @@ Experiencia demostrable disenando, desplegando y manteniendo sistemas cloud que 
 - Experiencia solida con flujos de trabajo basados en Git.
 - Experiencia interfaceando o ejecutando agentes de IA locales o en cloud, con enfoque frugal.
 
-[Aplicar](mailto:info@masensetech.com?subject=Candidatura%20-%20Cloud%20%26%20Embedded%20Systems%20Engineer)
+[Aplicar](mailto:info@masensetech.com?subject=Candidatura%20-%20Cloud%20%26%20Embedded%20Systems%20Engineer) - Por favor, se amable: revisamos cada candidatura manualmente. No envies texto inflado con IA, solo se una persona real.

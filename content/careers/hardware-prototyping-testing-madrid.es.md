@@ -49,4 +49,4 @@ Buscamos experiencia demostrable en testing de produccion electronica y prototip
 - Scripting en Python orientado a testing.
 - Familiaridad con Git.
 
-[Aplicar](mailto:info@masensetech.com?subject=Candidatura%20-%20Hardware%20Prototyping%20and%20Production%20Testing%20Engineer)
+[Aplicar](mailto:info@masensetech.com?subject=Candidatura%20-%20Hardware%20Prototyping%20and%20Production%20Testing%20Engineer) - Por favor, se amable: revisamos cada candidatura manualmente. No envies texto inflado con IA, solo se una persona real.

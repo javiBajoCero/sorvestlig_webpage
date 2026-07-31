@@ -54,4 +54,4 @@ Proven experience designing, deploying, and maintaining cloud systems that inter
 - Strong Git-based workflow experience.
 - Experience interfacing with or running local/cloud AI agents with a frugal mindset.
 
-[Apply](mailto:info@masensetech.com?subject=Application%20-%20Cloud%20%26%20Embedded%20Systems%20Engineer)
+[Apply](mailto:info@masensetech.com?subject=Application%20-%20Cloud%20%26%20Embedded%20Systems%20Engineer) - Please be nice: we review every application manually. Do not send bloated AI text, just be a real person.

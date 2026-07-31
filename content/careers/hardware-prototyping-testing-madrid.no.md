@@ -49,4 +49,4 @@ Vi ser etter praktisk erfaring med produksjonstesting av elektronikk og hardware
 - Python-scripting for testing.
 - Kjennskap til Git.
 
-[Sok](mailto:info@masensetech.com?subject=Soknad%20-%20Hardware%20Prototyping%20and%20Production%20Testing%20Engineer)
+[Sok](mailto:info@masensetech.com?subject=Soknad%20-%20Hardware%20Prototyping%20and%20Production%20Testing%20Engineer) - Vaer hyggelig: vi vurderer hver soknad manuelt. Ikke send oppblast AI-tekst, bare vaer et ekte menneske.

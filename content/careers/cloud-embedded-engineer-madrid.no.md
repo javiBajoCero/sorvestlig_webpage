@@ -54,4 +54,4 @@ Dokumentert erfaring med design, utrulling og drift av cloud-systemer som samhan
 - Solid erfaring med Git-baserte arbeidsflyter.
 - Erfaring med a interface med, eller kjore, lokale/cloud-baserte AI-agenter med frugal tilnaerming.
 
-[Sok](mailto:info@masensetech.com?subject=Soknad%20-%20Cloud%20%26%20Embedded%20Systems%20Engineer)
+[Sok](mailto:info@masensetech.com?subject=Soknad%20-%20Cloud%20%26%20Embedded%20Systems%20Engineer) - Vaer hyggelig: vi vurderer hver soknad manuelt. Ikke send oppblast AI-tekst, bare vaer et ekte menneske.
