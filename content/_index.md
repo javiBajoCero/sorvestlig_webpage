@@ -18,10 +18,16 @@ We design for real products, not just MVPs.
 </a>
 
 <div class="index-showcase" aria-label="Sørvestlig working surfaces">
-    <figure class="index-showcase__figure index-showcase__figure--portrait">
-        <img src="/images/franpereaquienlolea.jpg" alt="Firmware and hardware testing at a workbench" />
+    <figure class="index-showcase__figure">
+        <a class="index-showcase__link" href="/images/franpereaquienlolea.jpg" target="_blank" rel="noopener">
+            <img src="/images/franpereaquienlolea.jpg" alt="Firmware and hardware testing at a workbench" />
+            <span class="index-showcase__label">Firmware development</span>
+        </a>
     </figure>
-    <figure class="index-showcase__figure index-showcase__figure--landscape">
-        <img src="/images/probescircuit.jpg" alt="Oscilloscope probes connected to a circuit board" />
+    <figure class="index-showcase__figure">
+        <a class="index-showcase__link" href="/images/probescircuit.jpg" target="_blank" rel="noopener">
+            <img src="/images/probescircuit.jpg" alt="Oscilloscope probes connected to a circuit board" />
+            <span class="index-showcase__label">Hardware debug, bring-up &amp; power electronics</span>
+        </a>
     </figure>
 </div>

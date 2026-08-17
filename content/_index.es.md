@@ -18,10 +18,16 @@ Diseñamos para productos reales, no solo MVP.
 </a>
 
 <div class="index-showcase" aria-label="Superficies de trabajo de Sørvestlig">
-    <figure class="index-showcase__figure index-showcase__figure--portrait">
-        <img src="/images/franpereaquienlolea.jpg" alt="Pruebas de firmware y hardware en un banco de trabajo" />
+    <figure class="index-showcase__figure">
+        <a class="index-showcase__link" href="/images/franpereaquienlolea.jpg" target="_blank" rel="noopener">
+            <img src="/images/franpereaquienlolea.jpg" alt="Pruebas de firmware y hardware en un banco de trabajo" />
+            <span class="index-showcase__label">Desarrollo de firmware</span>
+        </a>
     </figure>
-    <figure class="index-showcase__figure index-showcase__figure--landscape">
-        <img src="/images/probescircuit.jpg" alt="Sondas de osciloscopio conectadas a una placa de circuito" />
+    <figure class="index-showcase__figure">
+        <a class="index-showcase__link" href="/images/probescircuit.jpg" target="_blank" rel="noopener">
+            <img src="/images/probescircuit.jpg" alt="Sondas de osciloscopio conectadas a una placa de circuito" />
+            <span class="index-showcase__label">Depuración de hardware, puesta en marcha y electrónica de potencia</span>
+        </a>
     </figure>
 </div>

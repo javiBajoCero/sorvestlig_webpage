@@ -18,10 +18,16 @@ Vi designer for ekte produkter, ikke bare MVP-er.
 </a>
 
 <div class="index-showcase" aria-label="Sørvestlig arbeidsflater">
-    <figure class="index-showcase__figure index-showcase__figure--portrait">
-        <img src="/images/franpereaquienlolea.jpg" alt="Testing av firmware og maskinvare ved en arbeidsbenk" />
+    <figure class="index-showcase__figure">
+        <a class="index-showcase__link" href="/images/franpereaquienlolea.jpg" target="_blank" rel="noopener">
+            <img src="/images/franpereaquienlolea.jpg" alt="Testing av firmware og maskinvare ved en arbeidsbenk" />
+            <span class="index-showcase__label">Firmwareutvikling</span>
+        </a>
     </figure>
-    <figure class="index-showcase__figure index-showcase__figure--landscape">
-        <img src="/images/probescircuit.jpg" alt="Oscilloskopprober koblet til et kretskort" />
+    <figure class="index-showcase__figure">
+        <a class="index-showcase__link" href="/images/probescircuit.jpg" target="_blank" rel="noopener">
+            <img src="/images/probescircuit.jpg" alt="Oscilloskopprober koblet til et kretskort" />
+            <span class="index-showcase__label">Maskinvarefeilsøking, oppstart og kraftelektronikk</span>
+        </a>
     </figure>
 </div>
