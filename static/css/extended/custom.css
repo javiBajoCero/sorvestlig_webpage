@@ -32,6 +32,7 @@ body {
 .index-showcase {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
     gap: 18px;
     margin-top: 44px;
 }
@@ -51,7 +52,7 @@ body {
 }
 
 .index-showcase > .index-showcase__figure {
-    aspect-ratio: 2 / 3;
+    min-height: 100%;
 }
 
 .index-showcase__column .index-showcase__figure {
@@ -118,6 +119,10 @@ body {
         aspect-ratio: 4 / 3;
     }
 
+    .index-showcase > .index-showcase__figure {
+        min-height: 0;
+    }
+
     .index-showcase__label {
         opacity: 1;
         transform: translateY(0);
@@ -140,8 +145,8 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 22px;
-    height: 22px;
+    width: 50px;
+    height: 50px;
     padding: 0;
     margin-top: 2px;
     color: #b87333;
@@ -158,8 +163,8 @@ body {
 }
 
 .linkedin-icon {
-    width: 22px;
-    height: 22px;
+    width: 50px;
+    height: 50px;
     fill: currentColor;
 }
 
