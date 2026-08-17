@@ -29,6 +29,57 @@ body {
     margin-left: 0;
 }
 
+.index-showcase {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.45fr);
+    gap: 18px;
+    margin-top: 44px;
+}
+
+.index-showcase__figure {
+    margin: 0;
+    overflow: hidden;
+    border-top: 2px solid rgba(184, 115, 51, 0.65);
+    background: #171513;
+}
+
+.index-showcase__figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) sepia(100%) saturate(220%) hue-rotate(340deg) brightness(0.9) contrast(1.05);
+    transition: filter 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+
+.index-showcase__figure--portrait {
+    aspect-ratio: 3 / 4;
+}
+
+.index-showcase__figure--landscape {
+    align-self: end;
+    aspect-ratio: 16 / 10;
+}
+
+.index-showcase__figure:hover img {
+    filter: grayscale(100%) sepia(100%) saturate(250%) hue-rotate(340deg) brightness(0.88) contrast(1.1);
+    opacity: 0.88;
+    transform: scale(1.015);
+}
+
+@media (max-width: 600px) {
+    .index-showcase {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 32px;
+    }
+
+    .index-showcase__figure--portrait,
+    .index-showcase__figure--landscape {
+        aspect-ratio: 16 / 10;
+    }
+}
+
 .copper {
     color: #b87333;
 }
