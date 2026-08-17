@@ -24,10 +24,18 @@ Diseñamos para productos reales, no solo MVP.
             <span class="index-showcase__label">Desarrollo de firmware</span>
         </a>
     </figure>
-    <figure class="index-showcase__figure">
-        <a class="index-showcase__link" href="/images/probescircuit.jpg" target="_blank" rel="noopener">
-            <img src="/images/probescircuit.jpg" alt="Sondas de osciloscopio conectadas a una placa de circuito" />
-            <span class="index-showcase__label">Depuración de hardware, puesta en marcha y electrónica de potencia</span>
-        </a>
-    </figure>
+    <div class="index-showcase__column">
+        <figure class="index-showcase__figure">
+            <a class="index-showcase__link" href="/images/probescircuit.jpg" target="_blank" rel="noopener">
+                <img src="/images/probescircuit.jpg" alt="Sondas de osciloscopio conectadas a una placa de circuito" />
+                <span class="index-showcase__label">Depuración de hardware, puesta en marcha y electrónica de potencia</span>
+            </a>
+        </figure>
+        <figure class="index-showcase__figure">
+            <a class="index-showcase__link" href="/images/unittesting.jpg" target="_blank" rel="noopener">
+                <img src="/images/unittesting.jpg" alt="Pruebas unitarias en hardware real" />
+                <span class="index-showcase__label">Pruebas en hardware real</span>
+            </a>
+        </figure>
+    </div>
 </div>

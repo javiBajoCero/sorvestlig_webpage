@@ -24,10 +24,18 @@ We design for real products, not just MVPs.
             <span class="index-showcase__label">Firmware development</span>
         </a>
     </figure>
-    <figure class="index-showcase__figure">
-        <a class="index-showcase__link" href="/images/probescircuit.jpg" target="_blank" rel="noopener">
-            <img src="/images/probescircuit.jpg" alt="Oscilloscope probes connected to a circuit board" />
-            <span class="index-showcase__label">Hardware debug, bring-up &amp; power electronics</span>
-        </a>
-    </figure>
+    <div class="index-showcase__column">
+        <figure class="index-showcase__figure">
+            <a class="index-showcase__link" href="/images/probescircuit.jpg" target="_blank" rel="noopener">
+                <img src="/images/probescircuit.jpg" alt="Oscilloscope probes connected to a circuit board" />
+                <span class="index-showcase__label">Hardware debug, bring-up &amp; power electronics</span>
+            </a>
+        </figure>
+        <figure class="index-showcase__figure">
+            <a class="index-showcase__link" href="/images/unittesting.jpg" target="_blank" rel="noopener">
+                <img src="/images/unittesting.jpg" alt="Unit testing on real hardware" />
+                <span class="index-showcase__label">Testing in real hardware</span>
+            </a>
+        </figure>
+    </div>
 </div>

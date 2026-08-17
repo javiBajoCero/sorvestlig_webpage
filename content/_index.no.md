@@ -24,10 +24,18 @@ Vi designer for ekte produkter, ikke bare MVP-er.
             <span class="index-showcase__label">Firmwareutvikling</span>
         </a>
     </figure>
-    <figure class="index-showcase__figure">
-        <a class="index-showcase__link" href="/images/probescircuit.jpg" target="_blank" rel="noopener">
-            <img src="/images/probescircuit.jpg" alt="Oscilloskopprober koblet til et kretskort" />
-            <span class="index-showcase__label">Maskinvarefeilsøking, oppstart og kraftelektronikk</span>
-        </a>
-    </figure>
+    <div class="index-showcase__column">
+        <figure class="index-showcase__figure">
+            <a class="index-showcase__link" href="/images/probescircuit.jpg" target="_blank" rel="noopener">
+                <img src="/images/probescircuit.jpg" alt="Oscilloskopprober koblet til et kretskort" />
+                <span class="index-showcase__label">Maskinvarefeilsøking, oppstart og kraftelektronikk</span>
+            </a>
+        </figure>
+        <figure class="index-showcase__figure">
+            <a class="index-showcase__link" href="/images/unittesting.jpg" target="_blank" rel="noopener">
+                <img src="/images/unittesting.jpg" alt="Enhetstesting på ekte maskinvare" />
+                <span class="index-showcase__label">Testing på ekte maskinvare</span>
+            </a>
+        </figure>
+    </div>
 </div>
